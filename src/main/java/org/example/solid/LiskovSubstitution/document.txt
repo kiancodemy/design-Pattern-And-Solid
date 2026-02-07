@@ -1,0 +1,2 @@
+every subclass should be substitutable for  their parent class
+it means if we use its parent function it should work properly

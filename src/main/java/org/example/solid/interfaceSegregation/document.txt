@@ -1,0 +1,3 @@
+interfaces should not force class to implement what they cant do
+what it means????
+it means

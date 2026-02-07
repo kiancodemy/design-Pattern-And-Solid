@@ -1,0 +1,5 @@
+open for extention and close for modification ,
+how? by using interface for new features,
+so when we add something new ,we should add it as a similar interface that do something new
+so we dont have to modify the existing class for new features
+that is called  open for extention and close for any kind of modification of existing class
