@@ -5,10 +5,16 @@ import org.example.structural.adapter.PaymentProcessor;
 import java.math.BigDecimal;
 
 public class StripeAdapter implements PaymentProcessor {
+    private StripeSdk stripeSdk;
+
+    public StripeAdapter(StripeSdk stripeSdk) {
+        this.stripeSdk = stripeSdk;
+    }
+
     @Override
     public void pay(BigDecimal amount) {
-        StripeSdk stripeSdk = new StripeSdk();
-        stripeSdk.sendPayment(amount,"EUR");
+
+        stripeSdk.sendPayment(amount, "EUR");
 
     }
 }
