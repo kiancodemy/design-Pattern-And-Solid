@@ -1,19 +1,10 @@
 Overview
-This project demonstrates the implementation of Gang of Four (GoF) design patterns in Java. The patterns are organized into separate folders based on their categories: Creational and Structural. Each pattern is implemented with clear, practical examples to help understand when and how to use them.
 
-src/
-├── creational/
-│   ├── factory/
-│   ├── abstractfactory/
-│   ├── singleton/
-│   └── prototype/
-└── structural/
-├── adapter/
-├── bridge/
-└── decorator/
+This project demonstrates the implementation of Gang of Four (GoF) design patterns in Java. The patterns are organized into separate folders based on their categories: Creational and Structural. Each pattern is implemented with clear, practical examples to help understand when and how to use them.
 
 
 Creational Patterns
+
 Creational patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. They help make a system independent of how its objects are created, composed, and represented.
 
 Factory Pattern
