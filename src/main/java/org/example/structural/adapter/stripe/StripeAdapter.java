@@ -13,8 +13,6 @@ public class StripeAdapter implements PaymentProcessor {
 
     @Override
     public void pay(BigDecimal amount) {
-
         stripeSdk.sendPayment(amount, "EUR");
-
     }
 }

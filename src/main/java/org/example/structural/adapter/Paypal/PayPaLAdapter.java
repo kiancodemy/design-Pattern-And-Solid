@@ -5,9 +5,14 @@ import org.example.structural.adapter.PaymentProcessor;
 import java.math.BigDecimal;
 
 public class PayPaLAdapter implements PaymentProcessor {
+    private PayPalSdk payPalSdk;
+
+    public PayPaLAdapter(PayPalSdk payPalSdk) {
+        this.payPalSdk = payPalSdk;
+    }
+
     @Override
     public void pay(BigDecimal amount) {
-        PayPalSdk payPalSdk = new PayPalSdk();
-        payPalSdk.sendPayment(amount,"USD");
+        payPalSdk.sendPayment(amount, "USD");
     }
 }
